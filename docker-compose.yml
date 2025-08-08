@@ -2,12 +2,12 @@ version: '3.8'
 
 services:
   backend:
-    build: ./backend
+    image: vxlntin/plant-backend:latest
     ports:
       - "5000:5000"
 
   frontend:
-    build: ./frontend
+    image: vxlntin/plant-frontend:latest
     ports:
       - "3000:3000"
     depends_on:
